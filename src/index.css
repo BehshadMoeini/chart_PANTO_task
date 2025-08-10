@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f5f5f5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.chart-container {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+  padding: 20px;
+  overflow: hidden; /* Prevent SVG overflow */
+}
+
+.chart-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.chart {
+  width: 100%;
+  height: 500px; /* Increased height to match SVG dimensions */
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  position: relative; /* For proper SVG positioning */
+  overflow: hidden; /* Ensure SVG stays within bounds */
+}
+
+/* Grid line styling */
+.grid line {
+  stroke: #e0e0e0;
+  stroke-opacity: 0.7;
+}
+
+.grid path {
+  stroke-width: 0;
+}
+
+/* Chart area styling */
+.chart svg {
+  background: #fafafa;
+  border-radius: 4px;
+  width: 100% !important;
+  height: 100% !important;
+  display: block; /* Remove inline spacing */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .chart {
+    height: 400px; /* Smaller height on mobile */
+  }
+  
+  .chart-container {
+    padding: 15px;
+  }
+  
+  .chart-title {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,22 @@
+.App {
+  min-height: 100vh;
+}
+
+.app-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 40px;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.loading, .error {
+  text-align: center;
+  font-size: 18px;
+  padding: 40px;
+  color: #666;
+}
+
+.error {
+  color: #d32f2f;
+}
